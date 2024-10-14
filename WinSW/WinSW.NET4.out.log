@@ -1,0 +1,75 @@
+2024-10-14 23:03:52 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-10-14 23:03:52 [main] INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+2024-10-14 23:03:52 [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-10-14 23:03:52 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-10-14 23:03:52 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-10-14 23:03:52 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-10-14 23:03:52 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+2024-10-14 23:03:52 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-10-14 23:03:52 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2024-10-14 23:03:52 [main] INFO  org.example.Main - Scheduler started
+2024-10-14 23:03:52 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 0 triggers
+2024-10-14 23:03:52 [main] INFO  org.example.Main - Job scheduled: group1.myJob
+2024-10-14 23:03:52 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 1 triggers
+2024-10-14 23:03:52 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.q.simpl.PropertySettingJobFactory - Producing instance of Job 'group1.myJob', class=org.example.MyJob
+2024-10-14 23:03:52 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 1 triggers
+2024-10-14 23:03:52 [DefaultQuartzScheduler_Worker-1] DEBUG org.quartz.core.JobRunShell - Calling execute on job group1.myJob
+2024-10-14 23:03:52 [DefaultQuartzScheduler_Worker-1] INFO  org.example.MyJob - Executing Job: group1.myJob
+2024-10-14 23:03:52 [DefaultQuartzScheduler_Worker-1] DEBUG org.example.MyJob - Job execution details: JobExecutionContext: trigger: 'group1.trigger1 job: group1.myJob fireTime: 'Mon Oct 14 23:03:52 WEST 2024 scheduledFireTime: Mon Oct 14 23:03:52 WEST 2024 previousFireTime: 'null nextFireTime: Mon Oct 14 23:04:02 WEST 2024 isRecovering: false refireCount: 0
+2024-10-14 23:04:02 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.q.simpl.PropertySettingJobFactory - Producing instance of Job 'group1.myJob', class=org.example.MyJob
+2024-10-14 23:04:02 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 1 triggers
+2024-10-14 23:04:02 [DefaultQuartzScheduler_Worker-2] DEBUG org.quartz.core.JobRunShell - Calling execute on job group1.myJob
+2024-10-14 23:04:02 [DefaultQuartzScheduler_Worker-2] INFO  org.example.MyJob - Executing Job: group1.myJob
+2024-10-14 23:04:02 [DefaultQuartzScheduler_Worker-2] DEBUG org.example.MyJob - Job execution details: JobExecutionContext: trigger: 'group1.trigger1 job: group1.myJob fireTime: 'Mon Oct 14 23:04:02 WEST 2024 scheduledFireTime: Mon Oct 14 23:04:02 WEST 2024 previousFireTime: 'Mon Oct 14 23:03:52 WEST 2024 nextFireTime: Mon Oct 14 23:04:12 WEST 2024 isRecovering: false refireCount: 0
+2024-10-14 23:04:12 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.q.simpl.PropertySettingJobFactory - Producing instance of Job 'group1.myJob', class=org.example.MyJob
+2024-10-14 23:04:12 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 1 triggers
+2024-10-14 23:04:12 [DefaultQuartzScheduler_Worker-3] DEBUG org.quartz.core.JobRunShell - Calling execute on job group1.myJob
+2024-10-14 23:04:12 [DefaultQuartzScheduler_Worker-3] INFO  org.example.MyJob - Executing Job: group1.myJob
+2024-10-14 23:04:12 [DefaultQuartzScheduler_Worker-3] DEBUG org.example.MyJob - Job execution details: JobExecutionContext: trigger: 'group1.trigger1 job: group1.myJob fireTime: 'Mon Oct 14 23:04:12 WEST 2024 scheduledFireTime: Mon Oct 14 23:04:12 WEST 2024 previousFireTime: 'Mon Oct 14 23:04:02 WEST 2024 nextFireTime: Mon Oct 14 23:04:22 WEST 2024 isRecovering: false refireCount: 0
+2024-10-14 23:04:22 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.q.simpl.PropertySettingJobFactory - Producing instance of Job 'group1.myJob', class=org.example.MyJob
+2024-10-14 23:04:22 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 1 triggers
+2024-10-14 23:04:22 [DefaultQuartzScheduler_Worker-4] DEBUG org.quartz.core.JobRunShell - Calling execute on job group1.myJob
+2024-10-14 23:04:22 [DefaultQuartzScheduler_Worker-4] INFO  org.example.MyJob - Executing Job: group1.myJob
+2024-10-14 23:04:22 [DefaultQuartzScheduler_Worker-4] DEBUG org.example.MyJob - Job execution details: JobExecutionContext: trigger: 'group1.trigger1 job: group1.myJob fireTime: 'Mon Oct 14 23:04:22 WEST 2024 scheduledFireTime: Mon Oct 14 23:04:22 WEST 2024 previousFireTime: 'Mon Oct 14 23:04:12 WEST 2024 nextFireTime: Mon Oct 14 23:04:32 WEST 2024 isRecovering: false refireCount: 0
+2024-10-14 23:04:32 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.q.simpl.PropertySettingJobFactory - Producing instance of Job 'group1.myJob', class=org.example.MyJob
+2024-10-14 23:04:32 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 1 triggers
+2024-10-14 23:04:32 [DefaultQuartzScheduler_Worker-5] DEBUG org.quartz.core.JobRunShell - Calling execute on job group1.myJob
+2024-10-14 23:04:32 [DefaultQuartzScheduler_Worker-5] INFO  org.example.MyJob - Executing Job: group1.myJob
+2024-10-14 23:04:32 [DefaultQuartzScheduler_Worker-5] DEBUG org.example.MyJob - Job execution details: JobExecutionContext: trigger: 'group1.trigger1 job: group1.myJob fireTime: 'Mon Oct 14 23:04:32 WEST 2024 scheduledFireTime: Mon Oct 14 23:04:32 WEST 2024 previousFireTime: 'Mon Oct 14 23:04:22 WEST 2024 nextFireTime: Mon Oct 14 23:04:42 WEST 2024 isRecovering: false refireCount: 0
+2024-10-14 23:04:42 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.q.simpl.PropertySettingJobFactory - Producing instance of Job 'group1.myJob', class=org.example.MyJob
+2024-10-14 23:04:42 [DefaultQuartzScheduler_Worker-6] DEBUG org.quartz.core.JobRunShell - Calling execute on job group1.myJob
+2024-10-14 23:04:42 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 1 triggers
+2024-10-14 23:04:42 [DefaultQuartzScheduler_Worker-6] INFO  org.example.MyJob - Executing Job: group1.myJob
+2024-10-14 23:04:42 [DefaultQuartzScheduler_Worker-6] DEBUG org.example.MyJob - Job execution details: JobExecutionContext: trigger: 'group1.trigger1 job: group1.myJob fireTime: 'Mon Oct 14 23:04:42 WEST 2024 scheduledFireTime: Mon Oct 14 23:04:42 WEST 2024 previousFireTime: 'Mon Oct 14 23:04:32 WEST 2024 nextFireTime: Mon Oct 14 23:04:52 WEST 2024 isRecovering: false refireCount: 0
+2024-10-14 23:04:52 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.q.simpl.PropertySettingJobFactory - Producing instance of Job 'group1.myJob', class=org.example.MyJob
+2024-10-14 23:04:52 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 1 triggers
+2024-10-14 23:04:52 [DefaultQuartzScheduler_Worker-7] DEBUG org.quartz.core.JobRunShell - Calling execute on job group1.myJob
+2024-10-14 23:04:52 [DefaultQuartzScheduler_Worker-7] INFO  org.example.MyJob - Executing Job: group1.myJob
+2024-10-14 23:04:52 [DefaultQuartzScheduler_Worker-7] DEBUG org.example.MyJob - Job execution details: JobExecutionContext: trigger: 'group1.trigger1 job: group1.myJob fireTime: 'Mon Oct 14 23:04:52 WEST 2024 scheduledFireTime: Mon Oct 14 23:04:52 WEST 2024 previousFireTime: 'Mon Oct 14 23:04:42 WEST 2024 nextFireTime: Mon Oct 14 23:05:02 WEST 2024 isRecovering: false refireCount: 0
+2024-10-14 23:05:02 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.q.simpl.PropertySettingJobFactory - Producing instance of Job 'group1.myJob', class=org.example.MyJob
+2024-10-14 23:05:02 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 1 triggers
+2024-10-14 23:05:02 [DefaultQuartzScheduler_Worker-8] DEBUG org.quartz.core.JobRunShell - Calling execute on job group1.myJob
+2024-10-14 23:05:02 [DefaultQuartzScheduler_Worker-8] INFO  org.example.MyJob - Executing Job: group1.myJob
+2024-10-14 23:05:02 [DefaultQuartzScheduler_Worker-8] DEBUG org.example.MyJob - Job execution details: JobExecutionContext: trigger: 'group1.trigger1 job: group1.myJob fireTime: 'Mon Oct 14 23:05:02 WEST 2024 scheduledFireTime: Mon Oct 14 23:05:02 WEST 2024 previousFireTime: 'Mon Oct 14 23:04:52 WEST 2024 nextFireTime: Mon Oct 14 23:05:12 WEST 2024 isRecovering: false refireCount: 0
+2024-10-14 23:05:12 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.q.simpl.PropertySettingJobFactory - Producing instance of Job 'group1.myJob', class=org.example.MyJob
+2024-10-14 23:05:12 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 1 triggers
+2024-10-14 23:05:12 [DefaultQuartzScheduler_Worker-9] DEBUG org.quartz.core.JobRunShell - Calling execute on job group1.myJob
+2024-10-14 23:05:12 [DefaultQuartzScheduler_Worker-9] INFO  org.example.MyJob - Executing Job: group1.myJob
+2024-10-14 23:05:12 [DefaultQuartzScheduler_Worker-9] DEBUG org.example.MyJob - Job execution details: JobExecutionContext: trigger: 'group1.trigger1 job: group1.myJob fireTime: 'Mon Oct 14 23:05:12 WEST 2024 scheduledFireTime: Mon Oct 14 23:05:12 WEST 2024 previousFireTime: 'Mon Oct 14 23:05:02 WEST 2024 nextFireTime: Mon Oct 14 23:05:22 WEST 2024 isRecovering: false refireCount: 0
+2024-10-14 23:05:22 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.q.simpl.PropertySettingJobFactory - Producing instance of Job 'group1.myJob', class=org.example.MyJob
+2024-10-14 23:05:22 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 1 triggers
+2024-10-14 23:05:22 [DefaultQuartzScheduler_Worker-10] DEBUG org.quartz.core.JobRunShell - Calling execute on job group1.myJob
+2024-10-14 23:05:22 [DefaultQuartzScheduler_Worker-10] INFO  org.example.MyJob - Executing Job: group1.myJob
+2024-10-14 23:05:22 [DefaultQuartzScheduler_Worker-10] DEBUG org.example.MyJob - Job execution details: JobExecutionContext: trigger: 'group1.trigger1 job: group1.myJob fireTime: 'Mon Oct 14 23:05:22 WEST 2024 scheduledFireTime: Mon Oct 14 23:05:22 WEST 2024 previousFireTime: 'Mon Oct 14 23:05:12 WEST 2024 nextFireTime: Mon Oct 14 23:05:32 WEST 2024 isRecovering: false refireCount: 0
+2024-10-14 23:05:32 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.q.simpl.PropertySettingJobFactory - Producing instance of Job 'group1.myJob', class=org.example.MyJob
+2024-10-14 23:05:32 [DefaultQuartzScheduler_QuartzSchedulerThread] DEBUG o.quartz.core.QuartzSchedulerThread - batch acquisition of 1 triggers
+2024-10-14 23:05:32 [DefaultQuartzScheduler_Worker-1] DEBUG org.quartz.core.JobRunShell - Calling execute on job group1.myJob
+2024-10-14 23:05:32 [DefaultQuartzScheduler_Worker-1] INFO  org.example.MyJob - Executing Job: group1.myJob
+2024-10-14 23:05:32 [DefaultQuartzScheduler_Worker-1] DEBUG org.example.MyJob - Job execution details: JobExecutionContext: trigger: 'group1.trigger1 job: group1.myJob fireTime: 'Mon Oct 14 23:05:32 WEST 2024 scheduledFireTime: Mon Oct 14 23:05:32 WEST 2024 previousFireTime: 'Mon Oct 14 23:05:22 WEST 2024 nextFireTime: Mon Oct 14 23:05:42 WEST 2024 isRecovering: false refireCount: 0
