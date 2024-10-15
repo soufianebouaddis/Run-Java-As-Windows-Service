@@ -16,9 +16,7 @@ This project showcases how to run a Java application as a Windows service using 
 - Maven (for building the project)
 - WinSW (Windows Service Wrapper)
 
-### Installation
-
-1. **Clone the Repository**:
+### Clone the Repository
 
    ```bash
    git clone https://github.com/soufianebouaddis/Run-Java-As-Windows-Service.git
